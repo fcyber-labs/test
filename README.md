@@ -1,152 +1,209 @@
----------------------------------------
-**# Annual Report Financial Analysis: Amazon (AMZN) – FY 2024**  
-
-*All calculations adhere strictly to the rules supplied.  No numbers have been invented; every metric is computed only when **all** required inputs are present.  When any input is missing, the result is reported as “Cannot calculate – missing …”.*  
+----------------------------------------
+**# Annual Report Financial Analysis: Amazon (AMZN) – FY 2024**
 
 ---
 
-## 1. Executive Summary  
-
-- **Company overview:** Amazon (ticker AMZN)  
-- **Reporting period:** FY 2024 (fiscal year ended December 31, 2024) – taken from the *company_info* section of the extracted data.  
+## 1. Executive Summary
+- **Company overview:** Amazon.com, Inc. (ticker AMZN) – data extracted from the FY 2024 financial statements.  
+- **Reporting period:** Fiscal year ended 2024 (all figures are in **$ millions** unless otherwise noted).  
 - **Available financial statements:**  
-
-| Statement | Present in JSON? | Data usable? |
-|-----------|------------------|--------------|
-| Income Statement (consolidated) | **Yes** (object exists) | All line‑items are **null** → no usable numbers |
-| Balance Sheet (consolidated)   | No | – |
-| Cash Flow Statement (consolidated) | No | – |
-
-- **Key financial highlights:**  
-  - No quantitative highlights can be reported because **every numeric field is missing** (all values are `null`).  
+  1. Income Statement (partial data)  
+  2. Balance Sheet (partial data)  
+  3. Cash‑Flow Statement (partial data)  
+- **Key financial highlights that **could** be calculated:**  
+  - Revenue grew **≈ 11 % YoY** to $637,959 M.  
+  - Operating margin is **≈ 0.01 %** (Operating Income $68.6 M ÷ Revenue).  
+  - Current Ratio **≈ 1.06**.  
+  - Quick Ratio **≈ 0.87**.  
+  - Free Cash Flow **$32,878 M**.  
 - **Overall financial performance assessment:**  
-  - *Insufficient data.*  The extracted file does not contain any usable figures for revenue, expenses, assets, liabilities, cash flows, or equity. Consequently, no profitability, liquidity, leverage, or efficiency ratios can be derived.  
+  - Amazon’s top‑line continued strong growth, but profitability metrics are extremely thin (operating margin < 0.02 %).  
+  - Liquidity is modestly adequate (Current Ratio just above 1).  
+  - Positive free cash generation indicates cash‑flow strength despite low earnings.  
 - **Main conclusions:**  
-  1. The data set is incomplete; only the skeleton of an income‑statement is present, with all values `null`.  
-  2. No meaningful financial analysis can be performed for FY 2024 without the underlying numbers.  
-  3. Additional source data (full income‑statement, balance‑sheet, cash‑flow statement) is required before any ratio or trend analysis can be executed.  
+  1. Revenue expansion remains a core driver.  
+  2. Lack of disclosed cost and net‑income figures prevents a full profitability assessment.  
+  3. Liquidity is sufficient but not robust.  
+  4. Missing balance‑sheet equity and debt details limit leverage analysis.
 
 ---
 
 ## 2. Income Statement Analysis  
 
-### 2.1 Revenue Analysis  
+### 2.1 Revenue Analysis
+- **Total revenue:** **$637,959 M** (current year)  
+- **Revenue growth (YoY):**  
 
-| Metric | Required inputs | Retrieved values | Formula | Calculation | Result |
-|--------|----------------|------------------|---------|-------------|--------|
-| **Total revenue** | `revenue` | `null` | – | – | **Cannot calculate – missing revenue** |
-| **Revenue growth (YoY)** | `revenue (2024)`, `revenue (2023)` | `null`, *not provided* | `(Current – Prior) / Prior × 100` | – | **Cannot calculate – missing current and/or prior year revenue** |
-| **Revenue segmentation** | Segment‑level revenue data | *none present* | – | – | **Cannot calculate – missing segment data** |
+  - **Required inputs:** Current‑year revenue, Prior‑year revenue  
+  - **Retrieved values:** Current = 637,959 ; Prior = 574,785  
+  - **Formula (Absolute Change):**  
+    \[
+    \text{Absolute Change}= \text{Current Revenue} - \text{Prior Revenue}
+    \]  
+  - **Calculation:** 637,959 − 574,785 = **63,174**  
+  - **Result (Absolute):** **$63,174 M** increase  
 
-### 2.2 Cost Structure Analysis  
+  - **Formula (Percentage Change):**  
+    \[
+    \text{Percentage Change}= \frac{\text{Absolute Change}}{\text{Prior Revenue}}\times100
+    \]  
+  - **Calculation:** \(\frac{63,174}{574,785}\times100 = 11.0\%\)  
+  - **Result (YoY):** **≈ 11.0 %**  
 
-| Metric | Required inputs | Retrieved values | Formula | Calculation | Result |
-|--------|----------------|------------------|---------|-------------|--------|
-| **Cost of Goods Sold (COGS)** | `cost_of_goods_sold` | `null` | – | – | **Cannot calculate – missing COGS** |
-| **COGS % of revenue** | `cost_of_goods_sold`, `revenue` | `null`, `null` | `COGS / Revenue × 100` | – | **Cannot calculate – missing COGS and/or revenue** |
-| **Operating Expenses (total)** | `operating_expenses.total` | `null` | – | – | **Cannot calculate – missing operating expenses** |
-| **Operating Expenses % of revenue** | `operating_expenses.total`, `revenue` | `null`, `null` | `Operating Expenses / Revenue × 100` | – | **Cannot calculate – missing operating expenses and/or revenue** |
+- **Revenue segmentation:** *Not provided in extracted data.*
 
-### 2.3 Profitability Analysis  
+### 2.2 Cost Structure Analysis
+| Item | Value | Comment |
+|------|-------|---------|
+| Cost of Goods Sold (COGS) | **null** | Cannot calculate COGS % of revenue – missing data |
+| Operating Expenses | **null** | Cannot calculate Operating Expenses % of revenue – missing data |
 
-| Metric | Required inputs | Retrieved values | Formula | Calculation | Result |
-|--------|----------------|------------------|---------|-------------|--------|
-| **Gross Profit** | `revenue`, `cost_of_goods_sold` | `null`, `null` | `Revenue – COGS` | – | **Cannot calculate – missing revenue and/or COGS** |
-| **Gross Margin %** | `gross_profit`, `revenue` | `null`, `null` | `Gross Profit / Revenue × 100` | – | **Cannot calculate – missing gross profit and/or revenue** |
-| **Operating Income (EBIT)** | `operating_income` | `null` | – | – | **Cannot calculate – missing operating income** |
-| **Operating Margin %** | `operating_income`, `revenue` | `null`, `null` | `Operating Income / Revenue × 100` | – | **Cannot calculate – missing operating income and/or revenue** |
-| **Net Income** | `net_income` (not present) | *not provided* | – | – | **Cannot calculate – missing net income** |
-| **Net Margin %** | `net_income`, `revenue` | `null`, `null` | `Net Income / Revenue × 100` | – | **Cannot calculate – missing net income and/or revenue** |
+### 2.3 Profitability Analysis
+| Metric | Calculation | Result |
+|--------|-------------|--------|
+| **Gross Profit** | Cannot calculate – missing **COGS** | — |
+| **Gross Margin %** | Cannot calculate – missing **Gross Profit** | — |
+| **Operating Income (EBIT)** | Extracted directly: **$68.6 M** | $68.6 M |
+| **Operating Margin %** | **Required inputs:** Operating Income, Revenue  <br>**Retrieved values:** Operating Income = 68.6 ; Revenue = 637,959  <br>**Formula:** \(\frac{\text{Operating Income}}{\text{Revenue}}\times100\)  <br>**Calculation:** \(\frac{68.6}{637,959}\times100 = 0.0108\%\) | **≈ 0.01 %** |
+| **Net Income** | **null** – cannot calculate Net Margin | — |
+| **Net Margin %** | Cannot calculate – missing **Net Income** | — |
 
 ---
 
 ## 3. EBITDA Analysis  
 
-| Metric | Required inputs | Retrieved values | Formula | Calculation | Result |
-|--------|----------------|------------------|---------|-------------|--------|
-| **EBITDA** | `operating_income`, `depreciation`, `amortization` | `null`, `null`, `null` | `Operating Income + Depreciation + Amortization` | – | **Cannot calculate – missing operating income, depreciation, and/or amortization** |
-| **EBITDA Margin %** | `EBITDA`, `revenue` | `null`, `null` | `EBITDA / Revenue × 100` | – | **Cannot calculate – missing EBITDA and/or revenue** |
-| **YoY EBITDA Growth** | `EBITDA (2024)`, `EBITDA (2023)` | `null`, *not provided* | `(Current – Prior) / Prior × 100` | – | **Cannot calculate – missing current and/or prior year EBITDA** |
+### 3.1 EBITDA Calculation
+- **Required inputs:** Operating Income, Depreciation, Amortization  
+- **Retrieved values:** Operating Income = 68.6 ; Depreciation = 32.1 ; Amortization = null  
+- **Result:** **Cannot calculate – missing Amortization**
+
+### 3.2 EBITDA Margin
+- **Required inputs:** EBITDA, Revenue  
+- **Retrieved values:** EBITDA = *missing* ; Revenue = 637,959  
+- **Result:** **Cannot calculate – missing EBITDA**
+
+### 3.3 EBITDA Trend Analysis
+- **Required inputs:** Current‑year EBITDA, Prior‑year EBITDA  
+- **Retrieved values:** Both missing  
+- **Result:** **Cannot calculate – missing EBITDA for both years**
 
 ---
 
 ## 4. Balance Sheet Analysis  
 
-| Metric | Required inputs | Retrieved values | Formula | Calculation | Result |
-|--------|----------------|------------------|---------|-------------|--------|
-| **Current Assets** | `current_assets` | *not present* | – | – | **Cannot calculate – missing current assets** |
-| **Current Liabilities** | `current_liabilities` | *not present* | – | – | **Cannot calculate – missing current liabilities** |
-| **Current Ratio** | `current_assets`, `current_liabilities` | `null`, `null` | `Current Assets / Current Liabilities` | – | **Cannot calculate – missing current assets and/or current liabilities** |
-| **Quick Ratio** | `current_assets`, `inventory`, `current_liabilities` | `null`, `null`, `null` | `(Current Assets – Inventory) / Current Liabilities` | – | **Cannot calculate – missing current assets, inventory, and/or current liabilities** |
-| **Total Debt** | `total_debt` | *not present* | – | – | **Cannot calculate – missing total debt** |
-| **Total Equity** | `total_equity` | *not present* | – | – | **Cannot calculate – missing total equity** |
-| **Debt‑to‑Equity** | `total_debt`, `total_equity` | `null`, `null` | `Total Debt / Total Equity` | – | **Cannot calculate – missing total debt and/or total equity** |
-| **Debt‑to‑Assets** | `total_debt`, `total_assets` | `null`, `null` | `Total Debt / Total Assets` | – | **Cannot calculate – missing total debt and/or total assets** |
-| **Total Assets = Liabilities + Equity?** | `total_assets`, `total_liabilities`, `total_equity` | `null`, `null`, `null` | Verify `Total Assets = Total Liabilities + Total Equity` | – | **Cannot verify – missing total assets, liabilities, and equity** |
+### 4.1 Asset Structure
+- **Current Assets:** **$190,867 M**  
+- **Inventory:** **$34,214 M** (included in Current Assets)  
+- **Non‑Current Assets:** *Cannot derive – total assets minus current assets requires total assets (available) but non‑current breakdown not provided.*  
+- **Total Assets:** **$624,894 M**
+
+### 4.2 Liability Structure
+- **Current Liabilities:** **$179,431 M**  
+- **Long‑Term Debt (proxy for long‑term liabilities):** **$52,623 M**  
+- **Total Liabilities:** **null** – cannot compute full liability total.
+
+### 4.3 Equity Analysis
+- **Total Shareholders’ Equity:** **null** – missing.  
+- **Retained Earnings:** **null** – missing.
+
+### 4.4 Balance Sheet Verification
+- **Check Assets = Liabilities + Equity:**  
+  - Required inputs: Total Assets, Total Liabilities, Total Equity  
+  - Retrieved values: Total Assets = 624,894 ; Total Liabilities = null ; Total Equity = null  
+  - **Result:** **Cannot verify – missing Liabilities and Equity figures**
 
 ---
 
 ## 5. Cash Flow Analysis  
 
-| Metric | Required inputs | Retrieved values | Formula | Calculation | Result |
-|--------|----------------|------------------|---------|-------------|--------|
-| **Operating Cash Flow** | `operating_cash_flow` | *not present* | – | – | **Cannot calculate – missing operating cash flow** |
-| **Capital Expenditures** | `capital_expenditures` | *not present* | – | – | **Cannot calculate – missing capital expenditures** |
-| **Free Cash Flow** | `operating_cash_flow`, `capital_expenditures` | `null`, `null` | `Operating Cash Flow – Capital Expenditures` | – | **Cannot calculate – missing operating cash flow and/or capital expenditures** |
-| **Cash Conversion Ratio** | `operating_cash_flow`, `net_income` | `null`, `null` | `Operating Cash Flow / Net Income` | – | **Cannot calculate – missing operating cash flow and/or net income** |
-| **Dividends Paid** | `dividends_paid` | *not present* | – | – | **Cannot calculate – missing dividends paid** |
-| **Share Repurchases** | `share_repurchases` | *not present* | – | – | **Cannot calculate – missing share repurchases** |
+### 5.1 Operating Cash Flow
+- **Cash from operations:** **$115,877 M**  
+- **Cash Conversion Ratio (Operating Cash Flow / Net Income):**  
+  - Required inputs: Operating Cash Flow, Net Income  
+  - Retrieved values: Operating Cash Flow = 115,877 ; Net Income = null  
+  - **Result:** **Cannot calculate – missing Net Income**
+
+### 5.2 Investing Cash Flow
+- **Capital Expenditures:** **$82,999 M**
+
+### 5.3 Financing Cash Flow
+- **Dividends Paid:** **null** – not disclosed.  
+- **Share Repurchases:** **null** – not disclosed.
+
+### 5.4 Free Cash Flow
+- **Required inputs:** Operating Cash Flow, Capital Expenditures  
+- **Retrieved values:** Operating Cash Flow = 115,877 ; Capital Expenditures = 82,999  
+- **Formula:**  
+  \[
+  \text{Free Cash Flow}= \text{Operating Cash Flow} - \text{Capital Expenditures}
+  \]  
+- **Calculation:** 115,877 − 82,999 = **32,878**  
+- **Result:** **$32,878 M**
 
 ---
 
 ## 6. Ratio Analysis  
 
+### 6.1 Profitability Ratios
+| Ratio | Result |
+|-------|--------|
+| Gross Margin | **Cannot calculate – missing Gross Profit** |
+| Operating Margin | **≈ 0.01 %** (see Section 2.3) |
+| Net Margin | **Cannot calculate – missing Net Income** |
+| Return on Assets (ROA) | **Cannot calculate – missing Net Income** |
+| Return on Equity (ROE) | **Cannot calculate – missing Net Income & Equity** |
+
+### 6.2 Liquidity Ratios
 | Ratio | Required inputs | Retrieved values | Formula | Calculation | Result |
 |-------|----------------|------------------|---------|-------------|--------|
-| **Gross Margin** | `gross_profit`, `revenue` | `null`, `null` | `Gross Profit / Revenue × 100` | – | **Cannot calculate – missing gross profit and/or revenue** |
-| **Operating Margin** | `operating_income`, `revenue` | `null`, `null` | `Operating Income / Revenue × 100` | – | **Cannot calculate – missing operating income and/or revenue** |
-| **Net Margin** | `net_income`, `revenue` | `null`, `null` | `Net Income / Revenue × 100` | – | **Cannot calculate – missing net income and/or revenue** |
-| **ROA** | `net_income`, `average_total_assets` | `null`, *not provided* | `Net Income / Average Total Assets × 100` | – | **Cannot calculate – missing net income and/or average total assets** |
-| **ROE** | `net_income`, `average_shareholders_equity` | `null`, *not provided* | `Net Income / Average Shareholders' Equity × 100` | – | **Cannot calculate – missing net income and/or average equity** |
-| **Current Ratio** | `current_assets`, `current_liabilities` | `null`, `null` | `Current Assets / Current Liabilities` | – | **Cannot calculate – missing current assets and/or current liabilities** |
-| **Quick Ratio** | `current_assets`, `inventory`, `current_liabilities` | `null`, `null`, `null` | `(Current Assets – Inventory) / Current Liabilities` | – | **Cannot calculate – missing current assets, inventory, and/or current liabilities** |
-| **Debt‑to‑Equity** | `total_debt`, `total_equity` | `null`, `null` | `Total Debt / Total Equity` | – | **Cannot calculate – missing total debt and/or total equity** |
-| **Debt‑to‑Assets** | `total_debt`, `total_assets` | `null`, `null` | `Total Debt / Total Assets` | – | **Cannot calculate – missing total debt and/or total assets** |
+| **Current Ratio** | Current Assets, Current Liabilities | 190,867 ; 179,431 | \( \frac{\text{Current Assets}}{\text{Current Liabilities}} \) | \( \frac{190,867}{179,431}=1.0637 \) | **≈ 1.06** |
+| **Quick Ratio** | Current Assets, Inventory, Current Liabilities | 190,867 ; 34,214 ; 179,431 | \( \frac{\text{Current Assets} - \text{Inventory}}{\text{Current Liabilities}} \) | \( \frac{190,867-34,214}{179,431}=0.8726 \) | **≈ 0.87** |
+
+### 6.3 Leverage Ratios
+| Ratio | Result |
+|-------|--------|
+| Debt‑to‑Equity | **Cannot calculate – missing Total Equity** |
+| Debt‑to‑Assets | **Cannot calculate – missing Total Debt** (only long‑term debt disclosed) |
 
 ---
 
 ## 7. Year‑over‑Year (YoY) Comparison  
 
-| Metric | Required inputs | Retrieved values | Formula | Calculation | Result |
-|--------|----------------|------------------|---------|-------------|--------|
-| **Revenue YoY Change** | `revenue (2024)`, `revenue (2023)` | `null`, *not provided* | Absolute: `Current – Prior`; %: `(Current – Prior) / Prior × 100` | – | **Cannot calculate – missing current and/or prior year revenue** |
-| **Net Income YoY Change** | `net_income (2024)`, `net_income (2023)` | `null`, *not provided* | Same as above | – | **Cannot calculate – missing net income values** |
-| **EBITDA YoY Change** | `EBITDA (2024)`, `EBITDA (2023)` | `null`, *not provided* | Same as above | – | **Cannot calculate – missing EBITDA values** |
+### 7.1 Revenue YoY Change
+- **Absolute Change:** **$63,174 M** (see Section 2.1)  
+- **Percentage Change:** **≈ 11.0 %**  
+
+### 7.2 Net Income YoY Change
+- **Result:** **Cannot calculate – Net Income missing for both years**
+
+### 7.3 EBITDA YoY Change
+- **Result:** **Cannot calculate – EBITDA missing for both years**
 
 ---
 
 ## 8. Risk Summary  
 
-*The extracted JSON does not contain any narrative or qualitative risk disclosures.*  
-
-- **Financial Risks:** *Cannot assess – no data on debt levels, cash flow, or profitability.*  
-- **Operational Risks:** *Cannot assess – no segment or operating‑expense detail.*  
-- **Strategic Risks:** *Cannot assess – no commentary on market conditions, investments, or competitive positioning.*  
+| Risk Category | Observations from Available Data |
+|---------------|-----------------------------------|
+| **Financial Risks** | • Thin operating margin suggests limited earnings buffer.<br>• Missing equity and total‑debt data hampers leverage assessment. |
+| **Operational Risks** | • No cost‑structure details (COGS, operating expenses) – cannot gauge cost‑control effectiveness. |
+| **Strategic Risks** | • Revenue growth remains strong, but profitability pressures could affect long‑term strategic investments. |
 
 ---
 
 ## 9. Conclusion  
 
-- **Overall financial health assessment:** *Indeterminate.*  The data set lacks every quantitative element required for a standard financial analysis.  
-- **Strengths:** *None can be identified from the available data.*  
+- **Overall financial health assessment:** Amazon shows solid top‑line growth and positive free cash flow, but the absence of key profitability and balance‑sheet figures (COGS, Net Income, Total Equity, Total Debt) prevents a comprehensive evaluation. Liquidity is modestly sufficient (Current Ratio ≈ 1.06).  
+- **Strengths:**  
+  1. Revenue increased ~11 % YoY.  
+  2. Generated **$32.9 B** of free cash flow.  
+  3. Current Ratio > 1, indicating ability to meet short‑term obligations.  
 - **Weaknesses:**  
-  1. Complete absence of revenue, expense, asset, liability, and cash‑flow figures.  
-  2. No prior‑year comparatives, preventing any YoY trend analysis.  
-  3. No balance‑sheet or cash‑flow statements, precluding liquidity, solvency, and cash‑generation assessments.  
-- **Outlook:** *Cannot be formed without the missing financial statements.*  
+  1. Operating margin extremely low (≈ 0.01 %).  
+  2. Critical cost and earnings data missing, limiting profitability analysis.  
+  3. Incomplete leverage information (Equity, Total Debt).  
+- **Outlook:** Assuming revenue momentum continues, Amazon’s cash‑generation capacity may support future investments. However, stakeholders should seek the missing cost, earnings, and equity data to fully assess profitability sustainability and financial risk.  
 
----
-
-*Report generated by AI Financial Analyst (Goldman Sachs) based on the provided Amazon FY 2024 extract.  All calculations follow the strict rule‑based framework: a metric is computed only when **all** required inputs are present; otherwise the result is explicitly flagged as unavailable.*
+*Report generated by AI Financial Analyst based on Amazon FY 2024 extracted data. All calculations adhere strictly to the rule‑based methodology – calculations performed only when every required input was present.*
 ----------------------------------------
    ... (truncated)
