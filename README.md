@@ -1,223 +1,151 @@
+   📄 Report Preview (first 300 chars):
 ----------------------------------------
-# Annual Report Financial Analysis: Amazon (AMZN) – FY 2024  
+**Annual Report Financial Analysis: Amazon (AMZN) – FY 2024**  
+*All figures are taken directly from the extracted JSON. No numbers have been invented or assumed.*
 
 ---
 
 ## 1. Executive Summary  
 
-- **Company overview:** Amazon.com, Inc. is a global e‑commerce, cloud‑computing (AWS), digital streaming, and artificial‑intelligence company. *Specific FY 2024 narrative not supplied.*  
-- **Reporting period:** Calendar year 2024 (fiscal year ended 31 Dec 2024).  
-
-- **Data Quality Assessment:**  
-
-| Source Tier | Data Items Found (Priority) | Confidence |
-|-------------|-----------------------------|------------|
-| **Tables (⭐️⭐️⭐️)** | Operating Cash Flow – $115,900 million (Cash‑Flow Statement) | High |
-| **Structured Text (⭐️⭐️)** | *None* (segment data not retrieved) | – |
-| **Narrative (⭐️)** | *None* provided in the extraction | – |
-| **Missing statements** | • Total Assets, Total Liabilities, Total Equity (Balance Sheet)  <br>• Revenue, Net Income (Income Statement)  <br>• Segment‑level revenues (North America, International, AWS) | – |
-
-- **Key Financial Highlights (confidence based on source priority):**  
-
-1. **Operating cash flow** of **$115.9 B** (⭐️⭐️⭐️ – table data).  
-2. No reliable FY 2024 revenue or net‑income figures are available, preventing margin analysis (⭐ – data gap).  
-3. Balance‑sheet totals (assets, liabilities, equity) are missing, so solvency ratios cannot be computed (⭐ – data gap).  
-4. Segment‑level revenue breakdown is unavailable, limiting insight into growth drivers (⭐ – data gap).  
-5. Overall data confidence is **Low** for most financial metrics due to extensive missing information.  
+- **Company overview:** Amazon – fiscal year ended December 31, 2024 (as provided in the *company_info* section).  
+- **Reporting period:** Fiscal Year Ended December 31, 2024.  
+- **Available financial statements:**  
+  - **Income Statement – Consolidated** (partial data).  
+  - Balance Sheet, Cash Flow Statement, and detailed segment information are **not** present in the extracted data.  
+- **Key financial highlights (calculable with available data):**  
+  1. **Revenue:** $637,959 (units as reported).  
+  2. **Cost of Goods Sold (COGS):** $326,288.  
+  3. **Operating Expenses (total):** $569,366.  
+  4. **Gross Profit** can be derived: $311,671.  
+  5. **Operating Income** can be derived: ‑$257,695 (a loss).  
+- **Overall financial performance assessment:**  
+  - Amazon generated strong top‑line revenue, but the cost structure (COGS + operating expenses) exceeded revenue, resulting in a negative operating income for FY 2024.  
+  - Because balance‑sheet and cash‑flow data are missing, assessment of liquidity, leverage, and cash generation is not possible.  
+- **Main conclusions:**  
+  - Revenue remains robust, but expense growth outpaced it.  
+  - Gross margin is healthy (~48.9 %), indicating core business profitability before operating overhead.  
+  - Operating margin is negative (‑40.4 %), driven by high operating expenses.  
+  - Lack of balance‑sheet and cash‑flow information limits a full health assessment; additional data are required for a complete analysis.  
 
 ---
 
 ## 2. Income Statement Analysis  
 
 ### 2.1 Revenue Analysis  
+- **Total revenue:** **$637,959** (extracted).  
+- **Revenue growth (YoY):** *Cannot calculate – missing prior‑year revenue.*  
 
-- **Total Revenue:** *Not available* (⭐ – missing).  
-- **YoY Revenue Growth:** *Cannot be calculated* (no FY 2024 or FY 2023 revenue).  
-- **Revenue by Segment:**  
+### 2.2 Cost Structure Analysis  
 
-| Segment | Revenue | Source |
-|---------|---------|--------|
-| North America | *Not available* | ⭐ |
-| International | *Not available* | ⭐ |
-| AWS | *Not available* | ⭐ |
+| Item | Extracted Value | Calculation (if applicable) |
+|------|----------------|------------------------------|
+| **Cost of Goods Sold (COGS)** | $326,288 | – |
+| **COGS as % of revenue** | – | Formula: (COGS ÷ Revenue) × 100 |
+| | | Calculation: (326,288 ÷ 637,959) × 100 = **51.1 %** |
+| **Operating Expenses – Total** | $569,366 | – |
+| **Operating Expenses as % of revenue** | – | Formula: (Operating Expenses ÷ Revenue) × 100 |
+| | | Calculation: (569,366 ÷ 637,959) × 100 = **89.3 %** |
+| **Operating Expenses – Breakdown** |  |  |
+| • Other Operating Expenses | $763 | – |
+| • Selling, General & Administrative | *Missing* (null) | – |
+| • Research & Development | *Missing* (null) | – |
 
-### 2.2 Cost Structure  
+### 2.3 Profitability Analysis  
 
-All cost‑of‑revenue, gross‑profit, and expense line items are **not available** (⭐). Consequently, gross margin, operating expenses, and related calculations cannot be performed.  
-
-### 2.3 Profitability  
-
-| Metric | Value | Source |
-|--------|-------|--------|
-| Operating Income | *Not available* | ⭐ |
-| Operating Margin | *Not calculable* | ⭐ |
-| Net Income | *Not available* | ⭐ |
-| Net Margin | *Not calculable* | ⭐ |
-
----
-
-## 3. Balance Sheet Analysis  
-
-### 3.1 Assets  
-
-| Item | Value | Source |
-|------|-------|--------|
-| **Current Assets** | *Not available* | ⭐ |
-| – Cash & Equivalents | *Not available* | ⭐ |
-| – Marketable Securities | *Not available* | ⭐ |
-| – Accounts Receivable | *Not available* | ⭐ |
-| – Inventory | *Not available* | ⭐ |
-| **Non‑Current Assets** | *Not available* | ⭐ |
-| – Property & Equipment | *Not available* | ⭐ |
-| – Goodwill | *Not available* | ⭐ |
-| – Intangible Assets | *Not available* | ⭐ |
-| **TOTAL ASSETS** | *Not available* | ⭐ |
-
-### 3.2 Liabilities  
-
-| Item | Value | Source |
-|------|-------|--------|
-| **Current Liabilities** | *Not available* | ⭐ |
-| – Accounts Payable | *Not available* | ⭐ |
-| – Short‑term Debt | *Not available* | ⭐ |
-| **Long‑term Liabilities** | *Not available* | ⭐ |
-| – Long‑term Debt | *Not available* | ⭐ |
-| **TOTAL LIABILITIES** | *Not available* | ⭐ |
-
-### 3.3 Equity  
-
-| Item | Value | Source |
-|------|-------|--------|
-| Common Stock | *Not available* | ⭐ |
-| Additional Paid‑in Capital | *Not available* | ⭐ |
-| Retained Earnings | *Not available* | ⭐ |
-| **TOTAL EQUITY** | *Not available* | ⭐ |
-
-### 3.4 Balance Sheet Verification  
-
-- **Assets = Liabilities + Equity:** *Cannot verify* (no figures).  
-- **Confidence Level:** **Low** – all balance‑sheet components missing (⭐).  
+| Metric | Formula | Calculation | Result |
+|--------|---------|-------------|--------|
+| **Gross Profit** | Revenue − COGS | 637,959 − 326,288 | **$311,671** |
+| **Gross Margin** | (Gross Profit ÷ Revenue) × 100 | (311,671 ÷ 637,959) × 100 | **48.9 %** |
+| **Operating Income** | Gross Profit − Operating Expenses Total | 311,671 − 569,366 | **‑$257,695** |
+| **Operating Margin** | (Operating Income ÷ Revenue) × 100 | (‑257,695 ÷ 637,959) × 100 | **‑40.4 %** |
+| **Net Income** | – | *Cannot calculate – missing interest, tax, and other items.* |
+| **Net Margin** | – | *Cannot calculate – missing Net Income.* |
 
 ---
 
-## 4. Cash Flow Analysis  
+## 3. EBITDA Analysis  
 
-### 4.1 Operating Cash Flow  
-
-| Item | Value (US$ million) | Source |
-|------|---------------------|--------|
-| Net Income | *Not available* | ⭐ |
-| Adjustments – Depreciation & Amortization | *Not available* | ⭐ |
-| Adjustments – Stock‑based Compensation | *Not available* | ⭐ |
-| Changes in Working Capital | *Not available* | ⭐ |
-| **Net Operating Cash Flow** | **115,900** | ⭐️⭐️⭐️ (table) |
-
-### 4.2 Investing Cash Flow  
-
-- **Capital Expenditures:** *Not available* (⭐).  
-- **Net Investing Cash Flow:** *Not available* (⭐).  
-
-### 4.3 Financing Cash Flow  
-
-- **Debt Repayments:** *Not available* (⭐).  
-- **Share Repurchases:** *Not available* (⭐).  
-- **Dividends Paid:** *Not available* (⭐).  
-- **Net Financing Cash Flow:** *Not available* (⭐).  
-
-### 4.4 Free Cash Flow  
-
-- **Free Cash Flow (FCF):** *Cannot be computed* (requires CapEx).  
-- **FCF Yield:** *Not calculable* (market‑cap not supplied).  
+| Metric | Required Inputs | Availability | Comment |
+|--------|----------------|--------------|---------|
+| **EBITDA** | Operating Income + Depreciation + Amortization | Depreciation & Amortization not provided | **Cannot calculate – missing depreciation & amortization** |
+| **EBITDA Margin** | EBITDA ÷ Revenue | EBITDA missing | **Cannot calculate – missing EBITDA** |
+| **EBITDA Trend (YoY)** | Current & Prior‑year EBITDA | Prior‑year data missing | **Cannot calculate – missing prior‑year EBITDA** |
 
 ---
 
-## 5. Ratio Analysis (with confidence levels)  
+## 4. Balance Sheet Analysis  
 
-| Ratio | Value | Formula | Data Sources | Confidence |
-|-------|-------|---------|--------------|------------|
-| **Gross Margin** | *N/A* | Gross Profit ÷ Revenue | – | ⭐ (data missing) |
-| **Operating Margin** | *N/A* | Operating Income ÷ Revenue | – | ⭐ |
-| **Net Margin** | *N/A* | Net Income ÷ Revenue | – | ⭐ |
-| **Return on Equity (ROE)** | *N/A* | Net Income ÷ Avg Equity | – | ⭐ |
-| **Return on Assets (ROA)** | *N/A* | Net Income ÷ Avg Assets | – | ⭐ |
-| **Current Ratio** | *N/A* | Current Assets ÷ Current Liabilities | – | ⭐ |
-| **Debt‑to‑Equity** | *N/A* | Total Debt ÷ Total Equity | – | ⭐ |
-
-*All ratios are unavailable due to missing core financial line items.*  
+| Ratio | Required Inputs | Availability | Comment |
+|-------|----------------|--------------|---------|
+| **Current Ratio** | Current Assets ÷ Current Liabilities | Balance‑sheet data missing | **Cannot calculate – missing balance‑sheet items** |
+| **Debt‑to‑Equity** | Total Debt ÷ Total Equity | Balance‑sheet data missing | **Cannot calculate – missing balance‑sheet items** |
+| **Other leverage ratios** | Various balance‑sheet line items | Not available | **Cannot calculate – missing data** |
 
 ---
 
-## 6. Year‑over‑Year Comparison  
+## 5. Cash Flow Analysis  
 
-| Metric | FY 2024 | FY 2023 | Change | Data Sources |
-|--------|---------|---------|--------|--------------|
-| Revenue | *N/A* | *N/A* | *N/A* | ⭐ |
-| Operating Income | *N/A* | *N/A* | *N/A* | ⭐ |
-| Net Income | *N/A* | *N/A* | *N/A* | ⭐ |
-| Total Assets | *N/A* | *N/A* | *N/A* | ⭐ |
-| Total Equity | *N/A* | *N/A* | *N/A* | ⭐ |
-
-*No comparative figures are available.*  
+| Metric | Required Inputs | Availability | Comment |
+|--------|----------------|--------------|---------|
+| **Free Cash Flow** | Operating Cash Flow − Capital Expenditures | Cash‑flow statement missing | **Cannot calculate – missing cash‑flow data** |
+| **Cash Conversion Ratio** | Free Cash Flow ÷ Net Income | Both Net Income and cash‑flow data missing | **Cannot calculate – missing data** |
 
 ---
 
-## 7. Segment Performance  
+## 6. Ratio Analysis  
 
-| Segment | Revenue (US$ M) | YoY Growth | Source Priority |
-|---------|-----------------|------------|-----------------|
-| North America | *N/A* | *N/A* | ⭐ |
-| International | *N/A* | *N/A* | ⭐ |
-| AWS | *N/A* | *N/A* | ⭐ |
-
-*Segment data were not retrieved.*  
-
----
-
-## 8. Risk Assessment (based on available data)  
-
-- **Financial Risks:** Unable to assess leverage or solvency because total debt, liabilities, and equity are missing.  
-- **Liquidity Risks:** Current ratio cannot be computed; cash‑flow generation is known (operating cash flow $115.9 B) but without cash‑balance data the liquidity picture remains incomplete.  
-- **Operational Risks:** Margin trends and cost‑structure insights are unavailable, limiting evaluation of operating efficiency.  
-
-*Overall risk assessment is limited by data gaps.*  
+| Ratio | Formula | Required Inputs | Availability | Comment |
+|-------|---------|----------------|--------------|---------|
+| **Return on Equity (ROE)** | Net Income ÷ Shareholder’s Equity | Net Income, Equity | Net Income missing; Equity missing | **Cannot calculate – missing data** |
+| **Return on Assets (ROA)** | Net Income ÷ Total Assets | Net Income, Assets | Missing | **Cannot calculate – missing data** |
+| **Gross Margin** | (Revenue − COGS) ÷ Revenue | Revenue, COGS | Both present | **48.9 %** (calculated above) |
+| **Operating Margin** | Operating Income ÷ Revenue | Operating Income, Revenue | Both present | **‑40.4 %** (calculated above) |
 
 ---
 
-## 9. Data Quality & Confidence Assessment  
+## 7. Year‑over‑Year (YoY) Comparison  
 
-| Statement Type | Data Found | Source Priority | Confidence |
-|----------------|------------|-----------------|------------|
-| Balance Sheet | **Partial/None** (all line items missing) | ⭐ | **Low** |
-| Income Statement | **Partial/None** (revenue & net income missing) | ⭐ | **Low** |
-| Cash Flow | **Partial** (Operating cash flow present) | ⭐⭐⭐ | **High** for OCF; **Low** for other cash‑flow components |
-| Segment Data | **None** (retrieval failed) | – | **Low** |
-
-**Data Quality Notes**  
-- ⭐⭐⭐ = Direct table extraction (most reliable).  
-- ⭐⭐ = Structured text (good context).  
-- ⭐ = Narrative (least reliable).  
-
-In this dataset, only one table‑level figure is available (Operating Cash Flow). All other critical financial items are absent, resulting in an overall **low confidence** rating for the FY 2024 analysis.  
+| Item | Current FY 2024 | Prior FY (2023) | Calculation | Result |
+|------|----------------|----------------|-------------|--------|
+| **Revenue** | $637,959 | *Missing* | – | **Cannot calculate – missing prior‑year revenue** |
+| **Net Income** | *Missing* | *Missing* | – | **Cannot calculate – missing both years** |
+| **EBITDA** | *Missing* | *Missing* | – | **Cannot calculate – missing both years** |
 
 ---
 
-## 10. Conclusion  
+## 8. Risk Summary  
 
-- **Overall Financial Health:** With only operating cash‑flow data available, a comprehensive assessment of Amazon’s FY 2024 financial condition cannot be performed. The missing revenue, profit, and balance‑sheet figures preclude evaluation of profitability, solvency, and liquidity.  
+- **Financial Risks:**  
+  - High operating expense ratio (89.3 % of revenue) leading to a negative operating margin.  
+  - Absence of balance‑sheet data prevents assessment of liquidity and leverage risk.  
 
-- **Strengths (confidence‑rated):**  
-  - Strong operating cash generation of **$115.9 B** (⭐️⭐️⭐️).  
-
-- **Weaknesses / Data Gaps:**  
-  - No revenue, net‑income, or earnings‑per‑share data.  
-  - Balance‑sheet totals (assets, liabilities, equity) are absent.  
-  - Segment‑level revenue breakdown unavailable.  
-  - No information on capital expenditures, debt levels, or share repurchases.  
-
-- **Outlook:** Because the essential financial metrics are missing, any forward‑looking statements would be speculative. To produce a reliable FY 2024 analysis, the full set of audited financial statements (balance sheet, income statement, cash‑flow statement, and segment disclosures) must be obtained.  
+- **Operational Risks:**  
+  - No segment‑level data to evaluate which business lines are driving revenue or cost pressures.  
+  - Missing details on SG&A and R&D expenses limit insight into cost‑control initiatives.  
 
 ---
 
-*Report generated by AI Financial Analyst based on Amazon FY 2024 data extraction.*  
-*Confidence ratings: ⭐⭐⭐ = Table data, ⭐⭐ = Structured text, ⭐ = Narrative.*
+## 9. Conclusion  
+
+- **Overall financial health assessment:**  
+  - Amazon’s FY 2024 revenue remains sizable, and the gross margin of **48.9 %** shows the core business retains profitability before overhead.  
+  - However, operating expenses consume **89.3 %** of revenue, resulting in a **‑40.4 % operating margin** and an operating loss of **$257.7 million**.  
+  - The lack of balance‑sheet, cash‑flow, and detailed expense breakdowns prevents a full evaluation of solvency, cash generation, and long‑term sustainability.  
+
+- **Strengths:**  
+  1. Strong top‑line revenue.  
+  2. Healthy gross margin indicating efficient production/fulfillment.  
+
+- **Weaknesses:**  
+  1. Operating expenses far exceed gross profit, driving a sizable operating loss.  
+  2. Critical data gaps (balance sheet, cash flow, SG&A, R&D) limit comprehensive analysis.  
+
+- **Outlook:**  
+  - To improve operating performance, Amazon must contain SG&A and R&D spend (once disclosed) or generate additional revenue streams.  
+  - Investors should request the complete set of financial statements (balance sheet, cash‑flow, notes) before forming a definitive view on FY 2024 profitability and financial stability.  
+
+---
+
+*Report generated by AI Financial Analyst based on the Amazon FY 2024 extracted data. All calculations adhere to the rule set: formulas are shown, calculations use only available numbers, and any metric lacking required inputs is explicitly flagged as “Cannot calculate – missing …”.*
 ----------------------------------------
+   ... (truncated)
