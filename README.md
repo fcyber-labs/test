@@ -1,23 +1,29 @@
+----------------------------------------
+# Annual Report Financial Analysis: Amazon (AMZN) – FY 2024  
+
+---
+
 ## 1. Executive Summary  
 
-- **Company overview:** Amazon.com, Inc. is a global e‑commerce, cloud‑computing (AWS), digital streaming, and artificial‑intelligence company.  
-- **Reporting period:** Calendar year 2024 (FY 2024).  
+- **Company overview:** Amazon.com, Inc. is a global e‑commerce, cloud‑computing (AWS), digital streaming, and artificial‑intelligence company. *Specific FY 2024 narrative not supplied.*  
+- **Reporting period:** Calendar year 2024 (fiscal year ended 31 Dec 2024).  
 
 - **Data Quality Assessment:**  
 
-  | Source tier | Data items found (Priority) | Confidence |
-  |-------------|-----------------------------|------------|
-  | **Tables (⭐⭐⭐)** | Operating Cash Flow – $115,900 million (Cash Flow Statement) | High |
-  | **Structured text (⭐⭐)** | *None* (segment data not retrieved) | – |
-  | **Narrative (⭐)** | *None* | – |
-  | **Missing statements** | Balance‑sheet totals (assets, liabilities, equity), Income‑statement totals (revenue, net income, cost of revenue, operating income, etc.), Segment‑level revenue breakdowns | – |
+| Source Tier | Data Items Found (Priority) | Confidence |
+|-------------|-----------------------------|------------|
+| **Tables (⭐️⭐️⭐️)** | Operating Cash Flow – $115,900 million (Cash‑Flow Statement) | High |
+| **Structured Text (⭐️⭐️)** | *None* (segment data not retrieved) | – |
+| **Narrative (⭐️)** | *None* provided in the extraction | – |
+| **Missing statements** | • Total Assets, Total Liabilities, Total Equity (Balance Sheet)  <br>• Revenue, Net Income (Income Statement)  <br>• Segment‑level revenues (North America, International, AWS) | – |
 
-- **Key Financial Highlights (with confidence levels):**  
+- **Key Financial Highlights (confidence based on source priority):**  
 
-  1. **Operating cash flow** of **$115.9 B** is available from a table source (⭐⭐⭐ – high confidence).  
-  2. **Revenue, net income, and balance‑sheet totals** are **not available** in the extracted data (no confidence).  
-  3. **Segment‑level revenue** (North America, International, AWS) is missing (no confidence).  
-  4. Because the majority of core financial line items are absent, **ratio and trend analysis are limited** and must be treated as low‑confidence or omitted.  
+1. **Operating cash flow** of **$115.9 B** (⭐️⭐️⭐️ – table data).  
+2. No reliable FY 2024 revenue or net‑income figures are available, preventing margin analysis (⭐ – data gap).  
+3. Balance‑sheet totals (assets, liabilities, equity) are missing, so solvency ratios cannot be computed (⭐ – data gap).  
+4. Segment‑level revenue breakdown is unavailable, limiting insight into growth drivers (⭐ – data gap).  
+5. Overall data confidence is **Low** for most financial metrics due to extensive missing information.  
 
 ---
 
@@ -25,35 +31,28 @@
 
 ### 2.1 Revenue Analysis  
 
-- **Total Revenue:** *Not available* (source priority: –).  
-- **YoY Revenue Growth:** *Cannot be calculated* – revenue figure missing.  
+- **Total Revenue:** *Not available* (⭐ – missing).  
+- **YoY Revenue Growth:** *Cannot be calculated* (no FY 2024 or FY 2023 revenue).  
 - **Revenue by Segment:**  
 
-  | Segment | Revenue | Source |
-  |---------|---------|--------|
-  | North America | *Not available* | – |
-  | International | *Not available* | – |
-  | AWS | *Not available* | – |
+| Segment | Revenue | Source |
+|---------|---------|--------|
+| North America | *Not available* | ⭐ |
+| International | *Not available* | ⭐ |
+| AWS | *Not available* | ⭐ |
 
 ### 2.2 Cost Structure  
 
-| Item | Value | Source |
-|------|-------|--------|
-| Cost of Revenue | *Not available* | – |
-| Gross Profit | *Not available* | – |
-| Gross Margin | *Not calculable* | – |
-| R&D Expense | *Not available* | – |
-| SG&A Expense | *Not available* | – |
-| Total Operating Expenses | *Not available* | – |
+All cost‑of‑revenue, gross‑profit, and expense line items are **not available** (⭐). Consequently, gross margin, operating expenses, and related calculations cannot be performed.  
 
 ### 2.3 Profitability  
 
 | Metric | Value | Source |
 |--------|-------|--------|
-| Operating Income | *Not available* | – |
-| Operating Margin | *Not calculable* | – |
-| Net Income | *Not available* | – |
-| Net Margin | *Not calculable* | – |
+| Operating Income | *Not available* | ⭐ |
+| Operating Margin | *Not calculable* | ⭐ |
+| Net Income | *Not available* | ⭐ |
+| Net Margin | *Not calculable* | ⭐ |
 
 ---
 
@@ -63,41 +62,41 @@
 
 | Item | Value | Source |
 |------|-------|--------|
-| Current Assets (total) | *Not available* | – |
-| – Cash & Equivalents | *Not available* | – |
-| – Marketable Securities | *Not available* | – |
-| – Accounts Receivable | *Not available* | – |
-| – Inventory | *Not available* | – |
-| Non‑Current Assets (total) | *Not available* | – |
-| – Property & Equipment | *Not available* | – |
-| – Goodwill | *Not available* | – |
-| – Intangible Assets | *Not available* | – |
-| **TOTAL ASSETS** | *Not available* | – |
+| **Current Assets** | *Not available* | ⭐ |
+| – Cash & Equivalents | *Not available* | ⭐ |
+| – Marketable Securities | *Not available* | ⭐ |
+| – Accounts Receivable | *Not available* | ⭐ |
+| – Inventory | *Not available* | ⭐ |
+| **Non‑Current Assets** | *Not available* | ⭐ |
+| – Property & Equipment | *Not available* | ⭐ |
+| – Goodwill | *Not available* | ⭐ |
+| – Intangible Assets | *Not available* | ⭐ |
+| **TOTAL ASSETS** | *Not available* | ⭐ |
 
 ### 3.2 Liabilities  
 
 | Item | Value | Source |
 |------|-------|--------|
-| Current Liabilities (total) | *Not available* | – |
-| – Accounts Payable | *Not available* | – |
-| – Short‑term Debt | *Not available* | – |
-| Long‑term Liabilities (total) | *Not available* | – |
-| – Long‑term Debt | *Not available* | – |
-| **TOTAL LIABILITIES** | *Not available* | – |
+| **Current Liabilities** | *Not available* | ⭐ |
+| – Accounts Payable | *Not available* | ⭐ |
+| – Short‑term Debt | *Not available* | ⭐ |
+| **Long‑term Liabilities** | *Not available* | ⭐ |
+| – Long‑term Debt | *Not available* | ⭐ |
+| **TOTAL LIABILITIES** | *Not available* | ⭐ |
 
 ### 3.3 Equity  
 
 | Item | Value | Source |
 |------|-------|--------|
-| Common Stock | *Not available* | – |
-| Additional Paid‑in Capital | *Not available* | – |
-| Retained Earnings | *Not available* | – |
-| **TOTAL EQUITY** | *Not available* | – |
+| Common Stock | *Not available* | ⭐ |
+| Additional Paid‑in Capital | *Not available* | ⭐ |
+| Retained Earnings | *Not available* | ⭐ |
+| **TOTAL EQUITY** | *Not available* | ⭐ |
 
 ### 3.4 Balance Sheet Verification  
 
-- **Assets = Liabilities + Equity:** *Cannot verify* – required line items missing.  
-- **Confidence Level:** **Low** (insufficient data; only a single cash‑flow figure is present).
+- **Assets = Liabilities + Equity:** *Cannot verify* (no figures).  
+- **Confidence Level:** **Low** – all balance‑sheet components missing (⭐).  
 
 ---
 
@@ -105,46 +104,46 @@
 
 ### 4.1 Operating Cash Flow  
 
-| Item | Value (USD million) | Source |
+| Item | Value (US$ million) | Source |
 |------|---------------------|--------|
-| Net Income | *Not available* | – |
-| Adjustments – Depreciation & Amortization | *Not available* | – |
-| Adjustments – Stock‑based Compensation | *Not available* | – |
-| Changes in Working Capital | *Not available* | – |
-| **Net Operating Cash Flow** | **115,900** | ⭐⭐⭐ (table) |
+| Net Income | *Not available* | ⭐ |
+| Adjustments – Depreciation & Amortization | *Not available* | ⭐ |
+| Adjustments – Stock‑based Compensation | *Not available* | ⭐ |
+| Changes in Working Capital | *Not available* | ⭐ |
+| **Net Operating Cash Flow** | **115,900** | ⭐️⭐️⭐️ (table) |
 
 ### 4.2 Investing Cash Flow  
 
-- Capital Expenditures: *Not available*  
-- Net Investing Cash Flow: *Not available*  
+- **Capital Expenditures:** *Not available* (⭐).  
+- **Net Investing Cash Flow:** *Not available* (⭐).  
 
 ### 4.3 Financing Cash Flow  
 
-- Debt Repayments: *Not available*  
-- Share Repurchases: *Not available*  
-- Dividends Paid: *Not available*  
-- Net Financing Cash Flow: *Not available*  
+- **Debt Repayments:** *Not available* (⭐).  
+- **Share Repurchases:** *Not available* (⭐).  
+- **Dividends Paid:** *Not available* (⭐).  
+- **Net Financing Cash Flow:** *Not available* (⭐).  
 
 ### 4.4 Free Cash Flow  
 
-- **Free Cash Flow:** *Cannot be calculated* (CAPEX missing).  
-- **Free Cash Flow Yield:** *Cannot be calculated* (market‑cap not provided).
+- **Free Cash Flow (FCF):** *Cannot be computed* (requires CapEx).  
+- **FCF Yield:** *Not calculable* (market‑cap not supplied).  
 
 ---
 
-## 5. Ratio Analysis (with confidence levels)
+## 5. Ratio Analysis (with confidence levels)  
 
 | Ratio | Value | Formula | Data Sources | Confidence |
 |-------|-------|---------|--------------|------------|
-| **Gross Margin** | – | Gross Profit ÷ Revenue | – | ⭐ (none) |
-| **Operating Margin** | – | Operating Income ÷ Revenue | – | ⭐ |
-| **Net Margin** | – | Net Income ÷ Revenue | – | ⭐ |
-| **ROE** | – | Net Income ÷ Avg Equity | – | ⭐ |
-| **ROA** | – | Net Income ÷ Avg Assets | – | ⭐ |
-| **Current Ratio** | – | Current Assets ÷ Current Liabilities | – | ⭐ |
-| **Debt‑to‑Equity** | – | Total Debt ÷ Total Equity | – | ⭐ |
+| **Gross Margin** | *N/A* | Gross Profit ÷ Revenue | – | ⭐ (data missing) |
+| **Operating Margin** | *N/A* | Operating Income ÷ Revenue | – | ⭐ |
+| **Net Margin** | *N/A* | Net Income ÷ Revenue | – | ⭐ |
+| **Return on Equity (ROE)** | *N/A* | Net Income ÷ Avg Equity | – | ⭐ |
+| **Return on Assets (ROA)** | *N/A* | Net Income ÷ Avg Assets | – | ⭐ |
+| **Current Ratio** | *N/A* | Current Assets ÷ Current Liabilities | – | ⭐ |
+| **Debt‑to‑Equity** | *N/A* | Total Debt ÷ Total Equity | – | ⭐ |
 
-*All ratios are unavailable due to missing numerator or denominator data.*
+*All ratios are unavailable due to missing core financial line items.*  
 
 ---
 
@@ -152,33 +151,35 @@
 
 | Metric | FY 2024 | FY 2023 | Change | Data Sources |
 |--------|---------|---------|--------|--------------|
-| Revenue | *Not available* | *Not available* | – | – |
-| Operating Income | *Not available* | *Not available* | – | – |
-| Net Income | *Not available* | *Not available* | – | – |
-| Total Assets | *Not available* | *Not available* | – | – |
-| Total Equity | *Not available* | *Not available* | – | – |
+| Revenue | *N/A* | *N/A* | *N/A* | ⭐ |
+| Operating Income | *N/A* | *N/A* | *N/A* | ⭐ |
+| Net Income | *N/A* | *N/A* | *N/A* | ⭐ |
+| Total Assets | *N/A* | *N/A* | *N/A* | ⭐ |
+| Total Equity | *N/A* | *N/A* | *N/A* | ⭐ |
 
-*No YoY comparison possible.*
+*No comparative figures are available.*  
 
 ---
 
 ## 7. Segment Performance  
 
-| Segment | Revenue (USD M) | YoY Growth | Source Priority |
+| Segment | Revenue (US$ M) | YoY Growth | Source Priority |
 |---------|-----------------|------------|-----------------|
-| North America | *Not available* | – | – |
-| International | *Not available* | – | – |
-| AWS | *Not available* | – | – |
+| North America | *N/A* | *N/A* | ⭐ |
+| International | *N/A* | *N/A* | ⭐ |
+| AWS | *N/A* | *N/A* | ⭐ |
+
+*Segment data were not retrieved.*  
 
 ---
 
-## 8. Risk Assessment (based on available data)
+## 8. Risk Assessment (based on available data)  
 
-- **Financial Risks:** Unable to assess leverage or solvency because debt, equity, and total asset figures are missing.  
-- **Liquidity Risks:** Current ratio cannot be computed; liquidity risk assessment is therefore **indeterminate**.  
-- **Operational Risks:** Margin trends and operating cash‑flow quality cannot be evaluated without revenue and expense data.  
+- **Financial Risks:** Unable to assess leverage or solvency because total debt, liabilities, and equity are missing.  
+- **Liquidity Risks:** Current ratio cannot be computed; cash‑flow generation is known (operating cash flow $115.9 B) but without cash‑balance data the liquidity picture remains incomplete.  
+- **Operational Risks:** Margin trends and cost‑structure insights are unavailable, limiting evaluation of operating efficiency.  
 
-*Overall risk view is limited by data gaps.*
+*Overall risk assessment is limited by data gaps.*  
 
 ---
 
@@ -186,35 +187,37 @@
 
 | Statement Type | Data Found | Source Priority | Confidence |
 |----------------|------------|-----------------|------------|
-| Balance Sheet | **Partial/None** (no line items) | ⭐ (none) | **Low** |
-| Income Statement | **Partial/None** (no line items) | ⭐ (none) | **Low** |
-| Cash Flow | **Yes** (Operating Cash Flow) | ⭐⭐⭐ | **High** |
-| Segment Data | **No** | – | **Low** |
+| Balance Sheet | **Partial/None** (all line items missing) | ⭐ | **Low** |
+| Income Statement | **Partial/None** (revenue & net income missing) | ⭐ | **Low** |
+| Cash Flow | **Partial** (Operating cash flow present) | ⭐⭐⭐ | **High** for OCF; **Low** for other cash‑flow components |
+| Segment Data | **None** (retrieval failed) | – | **Low** |
 
 **Data Quality Notes**  
-- ⭐⭐⭐ = Direct from tables (highest reliability) – only operating cash flow meets this.  
-- ⭐⭐ = From structured text (good context) – none retrieved.  
-- ⭐ = From narrative (use with caution) – none retrieved.  
+- ⭐⭐⭐ = Direct table extraction (most reliable).  
+- ⭐⭐ = Structured text (good context).  
+- ⭐ = Narrative (least reliable).  
+
+In this dataset, only one table‑level figure is available (Operating Cash Flow). All other critical financial items are absent, resulting in an overall **low confidence** rating for the FY 2024 analysis.  
 
 ---
 
 ## 10. Conclusion  
 
-- **Overall Financial Health:** With only operating cash‑flow data available, a comprehensive assessment of Amazon’s FY 2024 financial health is **not possible**. The single high‑confidence cash‑flow figure ($115.9 B) suggests strong cash generation, but without revenue, profit, asset, and liability numbers we cannot gauge profitability, leverage, or liquidity.  
+- **Overall Financial Health:** With only operating cash‑flow data available, a comprehensive assessment of Amazon’s FY 2024 financial condition cannot be performed. The missing revenue, profit, and balance‑sheet figures preclude evaluation of profitability, solvency, and liquidity.  
 
-- **Strengths (high confidence):**  
-  - **Operating Cash Flow** of $115.9 B is confirmed from a table source (⭐⭐⭐).  
+- **Strengths (confidence‑rated):**  
+  - Strong operating cash generation of **$115.9 B** (⭐️⭐️⭐️).  
 
 - **Weaknesses / Data Gaps:**  
-  - Total revenue, net income, and all balance‑sheet line items are missing.  
-  - Segment‑level revenue data are absent.  
-  - No cost‑structure or expense figures, preventing margin analysis.  
-  - Lack of prior‑year figures blocks YoY trend evaluation.  
+  - No revenue, net‑income, or earnings‑per‑share data.  
+  - Balance‑sheet totals (assets, liabilities, equity) are absent.  
+  - Segment‑level revenue breakdown unavailable.  
+  - No information on capital expenditures, debt levels, or share repurchases.  
 
-- **Outlook:**  
-  - To form a reliable outlook for Amazon, **complete financial statements** (balance sheet, income statement, full cash‑flow statement) and **segment breakdowns** are required. Once obtained, a full suite of ratio, trend, and risk analyses can be performed.  
+- **Outlook:** Because the essential financial metrics are missing, any forward‑looking statements would be speculative. To produce a reliable FY 2024 analysis, the full set of audited financial statements (balance sheet, income statement, cash‑flow statement, and segment disclosures) must be obtained.  
 
-*Report generated by AI Financial Analyst based on Amazon FY2024 data*  
-*Confidence ratings: ⭐⭐⭐ = Table data, ⭐⭐ = Structured text, ⭐ = Narrative*
+---
+
+*Report generated by AI Financial Analyst based on Amazon FY 2024 data extraction.*  
+*Confidence ratings: ⭐⭐⭐ = Table data, ⭐⭐ = Structured text, ⭐ = Narrative.*
 ----------------------------------------
-   ... (truncated)
